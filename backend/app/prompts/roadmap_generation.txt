@@ -1,0 +1,34 @@
+You are a learning roadmap generator.
+
+Target role: {JOB_TITLE}
+Current skills: {RESUME_SKILLS}
+Missing skills: {MISSING_SKILLS}
+Priority skills: {RECOMMENDED_SKILLS}
+
+Generate a concise roadmap. Maximum 4 weeks. Keep it short.
+
+Return ONLY valid JSON, no explanation, no markdown.
+
+{
+  "weeks": [
+    {
+      "week_label": "Week 1-2",
+      "focus_skills": ["TypeScript"],
+      "goal": "One sentence goal",
+      "tasks": ["Task 1", "Task 2", "Task 3"],
+      "mini_project": "One short project idea",
+      "resources": [
+        {"title": "Resource name", "url": "https://url.com", "type": "docs"}
+      ]
+    }
+  ],
+  "priority_skills": ["TypeScript", "Docker"],
+  "recommended_projects": [
+    {
+      "title": "Project name",
+      "description": "Short description",
+      "skills_used": ["TypeScript", "React"]
+    }
+  ],
+  "summary": "2 sentence summary."
+}
